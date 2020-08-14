@@ -40,7 +40,7 @@ namespace MyShop.DataAcess.InMemory
         public void Update(Product product)
         {
 
-            Product updatedProduct = products.Find(p => p.Id == product.Id);
+            Product updatedProduct = products.Find(p => p.ID == product.ID);
 
             if (updatedProduct != null)
             {
@@ -56,7 +56,7 @@ namespace MyShop.DataAcess.InMemory
         public Product Find(string ID)
         {
 
-            Product product = products.Find(p => p.Id == ID);
+            Product product = products.Find(p => p.ID == ID);
 
             if (product != null)
             {
@@ -76,7 +76,7 @@ namespace MyShop.DataAcess.InMemory
 
         public void Delete(string ID)
         {
-            Product product = products.Find(p => p.Id == ID);
+            Product product = products.Find(p => p.ID == ID);
 
             if (product != null)
             {
