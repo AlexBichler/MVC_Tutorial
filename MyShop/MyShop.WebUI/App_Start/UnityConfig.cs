@@ -3,7 +3,6 @@ using MyShop.Core.Models;
 using MyShop.DataAcess.InMemory;
 using MyShop.DataAcess.SQL;
 using System;
-
 using Unity;
 
 namespace MyShop.WebUI
